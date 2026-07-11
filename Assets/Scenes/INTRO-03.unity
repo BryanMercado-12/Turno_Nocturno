@@ -527,6 +527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangeSceneOnTrigger
   sceneName: INTRO-02
   targetTag: 
+  targetSpawnPoint: salida_pintu
 --- !u!61 &595117926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -995,6 +996,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049419758}
   m_CullTransparentMesh: 1
+--- !u!1 &1227768411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1227768412}
+  m_Layer: 0
+  m_Name: salida_reli
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1227768412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227768411}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.74, y: -14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1233125074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,6 +1574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangeSceneOnTrigger
   sceneName: INTRO-04
   targetTag: 
+  targetSpawnPoint: 
 --- !u!1 &1426501638
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,6 +2328,7 @@ GameObject:
   - component: {fileID: 1686760284}
   - component: {fileID: 1686760286}
   - component: {fileID: 1686760287}
+  - component: {fileID: 1686760288}
   m_Layer: 0
   m_Name: 1002106730_0
   m_TagString: Player
@@ -2578,6 +2612,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
+--- !u!114 &1686760288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686760281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97df08f520475e4a84c912ac97af1c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!1 &1995598683
 GameObject:
   m_ObjectHideFlags: 0
@@ -2702,3 +2748,4 @@ SceneRoots:
   - {fileID: 1449612401}
   - {fileID: 1407131189}
   - {fileID: 595117928}
+  - {fileID: 1227768412}
