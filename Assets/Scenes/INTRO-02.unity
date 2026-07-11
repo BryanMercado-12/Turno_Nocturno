@@ -298,7 +298,7 @@ PolygonCollider2D:
       - {x: 36.724552, y: -15.01573}
       - {x: 36.764946, y: -16.038471}
       - {x: 36.322235, y: -16.422634}
-      - {x: 34.129974, y: -16.617573}
+      - {x: 34.548225, y: -17.244946}
       - {x: 31.325981, y: -18.563889}
       - {x: 31.17481, y: -18.661848}
       - {x: 29.446842, y: -19.550358}
@@ -314,8 +314,8 @@ PolygonCollider2D:
       - {x: 14.604162, y: -19.748585}
       - {x: 5.0962067, y: -19.76236}
       - {x: 4.0390053, y: -19.579914}
-      - {x: 1.8829308, y: -18.139067}
-      - {x: 0.17639923, y: -16.908697}
+      - {x: 1.4298286, y: -18.871}
+      - {x: -0.729805, y: -18.163443}
       - {x: -2.9810333, y: -17.458927}
       - {x: -3.2972984, y: -16.36134}
       - {x: -3.7453423, y: -13.612782}
@@ -1816,8 +1816,9 @@ GameObject:
   - component: {fileID: 1529667591}
   - component: {fileID: 1529667590}
   - component: {fileID: 1529667589}
+  - component: {fileID: 1529667592}
   m_Layer: 0
-  m_Name: "ba\xF1os (3)"
+  m_Name: mantenimiento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1853,7 +1854,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1943,6 +1944,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1529667592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529667588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e65c05a1682d05f48a216a3cf747a802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeSceneOnTrigger
+  sceneName: INTRO-05
+  targetTag: 
 --- !u!1 &1576362158
 GameObject:
   m_ObjectHideFlags: 0
